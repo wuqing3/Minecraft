@@ -1,0 +1,44 @@
+<!doctype>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>Div闪烁</title>
+<style>
+	div{
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top:200px;
+      left:570px;
+      color: #fff;
+      text-align: center;
+      line-height: 200px;
+	}
+</style>
+<script>
+	window.onload = function(){
+		var oDiv = document.getElementsByTagName('div')[0];
+		var qq = null;
+        var count = 0;
+		oDiv.onclick = function(){
+            qq = setInterval(function(){
+               if(count%2==0){
+               	oDiv.style.display = "none";
+               }else{
+               	oDiv.style.display = "block";
+               }
+               count++;
+               if(count == 10){
+               	clearInterval(qq);
+               	count = 0;
+               }
+            },60)
+		}
+	}
+</script>
+</head>
+<body>
+<div></div>
+</body>
+</html>

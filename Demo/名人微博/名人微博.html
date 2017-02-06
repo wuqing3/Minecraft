@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src = "./scripts/8.js"></script>
+	<style>
+	   body{
+	   	background-color: black;
+	   }
+       div,ul,li,input,p,span{
+       	padding: 0;
+       	margin: 0;
+       }
+       .main{
+       	width: 500px;
+       	/*height: 800px;*/
+       	background-color: #fff;
+       	margin:0 auto; 
+       	border 1px solid #fff;
+       	padding-top: 20px;
+       	border-radius: 6px;
+       	padding-bottom: 5px;
+       }
+       form{
+       	margin:10px 20px;
+       	position: relative;
+       }
+       li{
+       	list-style: none;
+       }
+       #userName{
+       	width: 155px;
+       	height: 20px;
+       	padding: 3px 5px;
+       	border: 1px solid rgb(208,208,208);
+       	border-radius: 6px;
+        float: left;
+       }
+       p.title{
+           margin-left: 20px;
+           font-size: 18px;
+       }
+       ul.lists{
+       	/*position: absolute;*/
+       	/*left: 174px;*/
+       	height: 30px;
+       }
+       .lists li{
+       	width: 28px;
+       	height: 28px;
+        float: left;
+        margin-left: 6px;
+        border-radius:5px;
+        overflow: hidden;
+        border: 1px solid transparent; 
+        opacity: 0.5;
+       }
+       .lists li img{
+       	max-width: 28px;
+       	max-height: 28px;
+       	
+       }
+       .lists li:hover{
+       	opacity:1;
+       	border:1px solid rgb(255,102,0);
+       }
+       .line2{
+           margin-top: 10px;
+
+           border: 
+       }
+       #contain{
+       	width: 448px;
+       	height: 65px;
+       	padding: 3px 5px;
+       	resize:none;
+       	border:1px solid rgb(208,208,208);
+       	border-radius: 6px;
+       }
+       .maxNum{
+       	font: 26px/30px Georgia, Tahoma, Arial;
+       }
+       #sendbtn{
+       	/*border: 1px solid black;*/
+       	width: 112px;
+       	height: 30px;
+       	background:url(./imgs/btn.png) no-repeat;
+        margin-left: 10px;
+        border: 0;
+       }
+       #sendbtn:hover{
+       	background-position:0 -30px;
+       }
+       .line3{
+       	position: relative;
+       	margin-top: 10px;
+        height: 30px;
+       	margin-bottom: 20px;
+       }
+       .line3 p{
+
+       	color: grey;
+       	position: absolute;
+       	right: 0;
+       	line-height: 30px;
+
+       }
+       .line4 p{
+       	width: 480px;
+       	height: 35px;
+       	margin-top: 30px;
+       	margin-left: 10px;
+       	position: relative;
+       	background-color: rgb(227,234,236);
+       }
+       .line4 p span{
+       	position: absolute;
+       	left: 10px;
+       	top:7px;
+       	padding: 0 15px;
+       	line-height: 28px;
+       	display: inline-block;
+       	background-color: #fff;
+       	font-size: 15px;
+       }
+       .sayss{
+       	margin-top: 10px;
+       	margin-left: 10px;
+
+       }
+       .sayss li{
+       	width: 470px;
+       	margin-left: 10px;
+       	/*height: 70px;*/
+       	border-bottom: 1px dashed grey;
+        margin-bottom: 10px;
+        overflow: auto;
+       }
+       .sayss li img{
+       	float:left;
+       	margin-right: 10px;
+       	margin-bottom: 10px;
+       }
+       .userNames{
+       	/*float: left;*/
+       	display: inline;
+       	/*margin-left: 10px;*/
+       	font-size: 15px;
+       	margin-top: 3px;
+       }
+       a{
+       	text-decoration: none;
+       	color: grey;
+       }
+       .words{
+       	/*float: left;*/
+       	display: inline;
+       	margin-left: 10px;
+        margin-top: 3px;
+       	font-size: 15px;
+       	margin-left: 10px;
+       }
+       .times{
+          margin-top:5px;
+
+       }
+       .times span{
+          font-size: 13px;
+          color: grey;
+       }
+       .lists .selectPics{
+        opacity:1;
+       	border:1px solid rgb(255,102,0);
+       }
+       .contains{
+       	float: left;
+       	width: 400px;
+       }
+	</style>
+</head>
+<body>
+    <div class="main">
+    	<p class="title">来，说说你在做什么，想什么</p>
+    	<form action="">
+        	<div id="line1">
+         	    <input type="text" id="userName" autocomplete="off">	
+                <ul class="lists">
+                	<li><img src="./imgs/mzd.png" alt=""></li>
+                	<li><img src="./imgs/qqq.png" alt=""></li>
+                	<li><img src="./imgs/zel.png" alt=""></li>
+                	<li><img src="./imgs/jjs.png" alt=""></li>
+                   	<li><img src="./imgs/bxl.png" alt=""></li>
+                   	<li><img src="./imgs/dxp.png" alt=""></li>
+                   	<li><img src="./imgs/xjp.png" alt=""></li>
+                	<li><img src="./imgs/wjb.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="line2">
+                <textarea name="says" id="contain" cols="30" rows="10" autocomplete="off"></textarea>
+            </div>
+            <div class="line3">
+            	<p>
+            		<span>还能输入</span>
+            		<strong class='maxNum'>140</strong>
+            		<span>个字</span>
+            		<input type="button" id="sendbtn">
+            	</p>
+            </div> 
+    	</form>
+    	<div class = "line4">
+    		<p>
+    			<span>大家在说</span>
+    		</p>
+    		<ul class="sayss">
+    			<li>
+    				<img src="./imgs/qqq.png" alt="">
+                    <div class="contains">
+                    	<div class="userNames">
+                    		<a href="">蛤蛤</a>:
+                    	</div>
+                    	<div class = "words">苟利国家生死以,岂因祸福避趋之？</div>
+                    	<div class="times"><span>1月16日12:37 +1s</span></div>
+                    </div>
+    			</li>
+    		</ul>
+    	</div>
+	</div>
+</body>
+</html>
